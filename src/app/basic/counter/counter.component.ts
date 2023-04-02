@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./counter.component.css']
 })
 export class CounterComponent {
+  counter:number = 10;
+
+
+  increaseBy(value: number){
+    this.counter += value;
+
+    //TODO:
+    // console.log({newValue: this.counter})
+  }
 
 }
