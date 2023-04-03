@@ -86,5 +86,4 @@ describe('CounterRouteComponent', () => {
 
   });
 
-
 });
