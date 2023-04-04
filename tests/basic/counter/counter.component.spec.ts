@@ -23,7 +23,7 @@ describe('CounterComponent', () => {
     expect(component).toBeTruthy();
   });
 
-  test('debe hacer match con el snapshot', () => {
+  test('debe hacer match con el snapshot (inicial)', () => {
     expect(compiled).toMatchSnapshot();
   });
 
@@ -41,7 +41,7 @@ describe('CounterComponent', () => {
     expect(component.counter).toBe(9)
   })
 
-  test('Cambiar el counter debe actializar la etiqueta h1 ', () => {
+  test('Cambiar el counter debe actializar la etiqueta h1', () => {
     component.increaseBy(10);
     fixture.detectChanges();
 
